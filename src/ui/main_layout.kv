@@ -1,0 +1,36 @@
+#:kivy 2.3.0
+#:import utils kivy.utils
+<MainLayout>
+
+    canvas.before:
+        Color:
+            rgba: utils.get_color_from_hex("#101414")
+        Rectangle:
+            pos: self.pos
+            size: self.size
+
+    BoxLayout:
+        size: (root.width, root.height)
+        orientation: "vertical"
+        spacing: 5 
+        Label:
+            text: "EDGE DETECTION WITH OPENCV"
+            font_size: 20
+            size_hint: (1, None)
+            height: 50 
+            canvas.before:
+                Color:
+                    rgba: utils.get_color_from_hex("#004f4f")
+                Rectangle:
+                    size: self.size
+                    pos: self.pos
+
+        BoxLayout:
+            orientation: "vertical"
+            spacing: 5
+            padding: 5
+
+            Controls:
+
+            MyCamera:
+                fit_mode: "cover"

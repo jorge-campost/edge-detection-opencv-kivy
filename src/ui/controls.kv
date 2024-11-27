@@ -1,0 +1,21 @@
+#:kivy 2.3.0
+<Controls>
+    sobel_button: sobel_button
+    canny_button: canny_button
+
+    orientation: "horizontal" 
+    spacing: 5
+    padding: 0 
+
+    size_hint: (1, None)
+    height: 50
+
+    Button:
+        id: sobel_button
+        text: "Sobel"
+        on_press: self.parent.press("sobel")
+        
+    Button:
+        id: canny_button
+        text: "Canny"
+        on_press: self.parent.press("canny")
