@@ -16,6 +16,8 @@ This an example of Opencv working with Kivy as GUI.
 - Unzip file and run "main.exe"
 
 ## Demo images
-![alt text](src/assets/canny.png)
-![alt text](src/assets/sobel.png)
-![alt text](src/assets/no_camera.jpg)
+- Image with Canny edge detection
+    ![image with canny filter](src/assets/canny.png){ width=75%}
+
+- Image with Sobel edge detection
+    ![alt text](src/assets/sobel.png){ width=75%}
